@@ -8,57 +8,57 @@ export default function Services() {
   const services = [
     {
       icon: <Code2 size={32} />,
-      title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies. From simple landing pages to complex platforms, I create solutions that scale with your business.",
+      title: "WordPress Development",
+      description: "Custom WordPress themes, WooCommerce stores, and high-performance websites. From plugin customization to complete site builds, I create scalable WordPress solutions tailored to your needs.",
       features: [
-        "Custom React and Next.js Applications",
-        "WordPress and Laravel Development",
-        "E-commerce Solutions",
-        "API Development and Integration",
-        "Performance Optimization",
-        "Responsive Design"
+        "Custom WordPress Theme Development",
+        "WooCommerce E-commerce Store Setup",
+        "Plugin Customization and Development",
+        "WordPress Performance Optimization",
+        "Responsive and Mobile-Friendly Design",
+        "Website Maintenance and Support"
       ],
       link: "/services/web-development"
     },
     {
       icon: <Palette size={32} />,
-      title: "Graphic Design",
-      description: "Visual identities that make a lasting impression. I design logos, brand systems, and marketing materials that communicate your brand story effectively.",
+      title: "Frontend Development",
+      description: "Modern, responsive frontend interfaces built with HTML5, CSS3, JavaScript, and popular frameworks. Create beautiful, fast-loading websites with pixel-perfect design, cross-browser compatibility, and mobile-first approach.",
       features: [
-        "Logo and Brand Identity Design",
-        "Social Media Graphics",
-        "Print Design and Marketing Materials",
-        "UI/UX Design",
-        "Illustration",
-        "Brand Guidelines"
+        "HTML5 Semantic Markup",
+        "CSS3, SASS, and Modern Styling",
+        "JavaScript (ES6+) and jQuery",
+        "React for Dynamic Interfaces",
+        "Bootstrap and Tailwind CSS",
+        "Responsive and Mobile-First Design"
       ],
       link: "/services/graphic-design"
     },
     {
       icon: <TrendingUp size={32} />,
-      title: "SEO Optimization",
-      description: "Data-driven strategies to improve your search engine rankings and drive organic traffic. I focus on sustainable, white-hat techniques that deliver long-term results.",
+      title: "Performance & SEO Optimization",
+      description: "Website speed optimization and technical SEO to improve search rankings and user experience. I focus on Core Web Vitals, on-page SEO, and performance best practices for faster, more discoverable websites.",
       features: [
-        "Technical SEO Audits",
-        "Keyword Research and Strategy",
-        "On-page Optimization",
-        "Content Strategy",
-        "Local SEO",
-        "Analytics and Reporting"
+        "Website Speed Optimization",
+        "Core Web Vitals Improvement",
+        "On-Page SEO & Technical Setup",
+        "Image and Code Optimization",
+        "Caching and CDN Implementation",
+        "SEO-Friendly URL Structure"
       ],
       link: "/services/seo"
     },
     {
       icon: <Megaphone size={32} />,
-      title: "Digital Marketing",
-      description: "Performance marketing campaigns that drive real results. From social media to paid advertising, I help you reach your target audience effectively.",
+      title: "Website Maintenance & Support",
+      description: "Ongoing website maintenance, updates, and technical support to keep your WordPress site secure, fast, and running smoothly. Regular backups, security monitoring, and quick fixes when you need them.",
       features: [
-        "Social Media Marketing",
-        "Google and Facebook Ads",
-        "Content Marketing",
-        "Email Marketing",
-        "Conversion Rate Optimization",
-        "Marketing Analytics"
+        "WordPress Core and Plugin Updates",
+        "Security Monitoring and Hardening",
+        "Regular Backups and Recovery",
+        "Bug Fixes and Troubleshooting",
+        "Performance Monitoring",
+        "Priority Support Response"
       ],
       link: "/services/marketing"
     }
@@ -102,8 +102,9 @@ export default function Services() {
               What I Do
             </h1>
             <p className="text-xl text-neutral-400 leading-relaxed max-w-3xl">
-              I offer a range of services to help businesses establish and grow their digital presence. 
-              From development to design to marketing - everything you need under one roof.
+              I offer professional WordPress development, WooCommerce stores, and frontend development services. 
+              From custom themes to responsive interfaces - everything you need to build a successful, 
+              high-performance website.
             </p>
           </motion.div>
         </div>

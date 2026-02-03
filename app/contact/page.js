@@ -68,9 +68,9 @@ export default function Contact() {
     {
       icon: <Mail size={24} />,
       title: "Email",
-      value: "hello@princewebdev.com",
+      value: "coderboyprince@gmail.com",
       description: "I will respond within 24 hours",
-      link: "mailto:hello@princewebdev.com"
+      link: "mailto:coderboyprince@gmail.com"
     },
     {
       icon: <Phone size={24} />,

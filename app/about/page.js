@@ -7,24 +7,24 @@ import { motion } from 'framer-motion';
 export default function About() {
   const experiences = [
     {
+      company: "Progressive Bytes",
+      role: "WordPress Developer",
+      period: "Mar 2025 - Present",
+      description: "Building awesome websites on WordPress for clients. Developing custom themes, implementing responsive designs, optimizing website performance, and ensuring SEO best practices. Working with modern WordPress technologies and frontend frameworks.",
+      link: "#"
+    },
+    {
       company: "Freelance",
-      role: "Full Stack Developer & Designer",
-      period: "2020 - Present",
-      description: "Building custom web solutions for clients worldwide. Leading projects from concept to deployment, specializing in React, Next.js, and WordPress development.",
+      role: "WordPress & Frontend Developer",
+      period: "2022 - Present",
+      description: "Developing custom WordPress themes, WooCommerce stores, and responsive frontend interfaces for clients worldwide. Building pixel-perfect websites with HTML5, CSS3, JavaScript, and modern frameworks. Expertise in custom plugin development, responsive design, and performance optimization.",
       link: "#"
     },
     {
-      company: "Digital Agency",
-      role: "Senior Web Developer",
-      period: "2018 - 2020",
-      description: "Led development of 50+ client projects including e-commerce platforms and SaaS applications. Mentored junior developers and established coding standards.",
-      link: "#"
-    },
-    {
-      company: "StartUp Hub",
-      role: "Frontend Developer",
-      period: "2016 - 2018",
-      description: "Developed responsive user interfaces and implemented modern frontend architectures. Collaborated with designers to create pixel-perfect implementations.",
+      company: "Shikhbe Shobai",
+      role: "Web Development Student & Early Career",
+      period: "2022",
+      description: "Started my web development journey learning WordPress, PHP, HTML, CSS, JavaScript, and modern web technologies. Built foundational skills in custom theme development, responsive design, and best coding practices through hands-on projects.",
       link: "#"
     }
   ];
@@ -46,10 +46,10 @@ export default function About() {
   ];
 
   const values = [
-    { title: "Clean Code", description: "Writing maintainable, scalable, and well-documented code." },
-    { title: "User First", description: "Every decision is made with the end user in mind." },
-    { title: "Continuous Learning", description: "Always staying updated with the latest technologies." },
-    { title: "Honest Communication", description: "Transparent and clear communication with clients." }
+    { title: "WordPress Expertise", description: "Custom themes, plugins, WooCommerce, and complete WordPress solutions." },
+    { title: "Frontend Mastery", description: "HTML5, CSS3, JavaScript, responsive design, and cross-browser compatibility." },
+    { title: "Performance & SEO", description: "Optimized code, fast load times, mobile-first approach, and SEO best practices." },
+    { title: "Quality Delivery", description: "Pixel-perfect design implementation, clean code, and reliable client support." }
   ];
 
   return (
@@ -67,9 +67,10 @@ export default function About() {
               Me, Basically
             </h1>
             <p className="text-xl text-neutral-400 leading-relaxed max-w-3xl">
-              I am a Full Stack Developer and Designer based in Bangladesh with a passion for 
-              creating beautiful, functional, and user-centered digital experiences. I have been 
-              building things for the web for over 5 years.
+              I am a passionate WordPress and Frontend Developer from Bangladesh, currently working at Progressive Bytes. 
+              I have strong expertise in creating modern, responsive, high-performance, and SEO-friendly websites. 
+              I started my journey in 2022 and specialize in custom WordPress development and frontend technologies 
+              including HTML5, CSS3, JavaScript, and responsive design.
             </p>
           </motion.div>
         </div>
@@ -88,23 +89,28 @@ export default function About() {
             
             <div className="space-y-6 text-lg text-neutral-400 leading-relaxed">
               <p>
-                My journey into web development started back in 2015 when I built my first website 
-                for a local business. Since then, I have been hooked on the process of turning ideas 
-                into reality through code.
+                My web development journey began in 2022 when I started learning from Shikhbe Shobai, a renowned 
+                learning platform in Bangladesh. That is where I discovered my passion for WordPress development 
+                and modern frontend technologies. From day one, I was captivated by the possibilities of creating 
+                functional, beautiful, and responsive websites that solve real business problems.
               </p>
               <p>
-                Over the years, I have worked with startups, agencies, and established businesses, 
-                helping them build their digital presence. From simple landing pages to complex 
-                e-commerce platforms, I enjoy the challenge of solving problems through technology.
+                I quickly immersed myself in WordPress - mastering custom theme development, plugin customization, 
+                and WooCommerce e-commerce solutions. I learned PHP, MySQL, HTML5, CSS3, JavaScript, and WordPress 
+                core architecture from the ground up. Within months, I was building custom post types, creating 
+                responsive layouts, and developing complete websites for real clients.
               </p>
               <p>
-                What sets me apart is my combination of technical skills and design sensibility. 
-                I do not just write code - I craft experiences. I believe that great software 
-                should not only work well but also feel great to use.
+                My frontend development skills include modern HTML5 semantic markup, CSS3 with Flexbox and Grid, 
+                JavaScript (ES6+), jQuery, Bootstrap, Tailwind CSS, and responsive mobile-first design. I also 
+                work with React for building dynamic user interfaces when needed. I focus on cross-browser 
+                compatibility, accessibility standards, and writing clean, maintainable code.
               </p>
               <p>
-                When I am not coding, you will find me exploring new technologies, contributing 
-                to open source projects, or sharing my knowledge through blog posts and tutorials.
+                Today, I work as a freelance WordPress and Frontend Developer, serving clients worldwide. I 
+                specialize in custom WordPress theme development, WooCommerce stores, responsive design, 
+                performance optimization, and SEO best practices. Every project is an opportunity to deliver 
+                pixel-perfect, high-quality work that exceeds expectations.
               </p>
             </div>
           </motion.div>

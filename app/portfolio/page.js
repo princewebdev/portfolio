@@ -7,51 +7,51 @@ import { motion } from 'framer-motion';
 export default function Portfolio() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      category: "Web Development",
-      description: "A full-featured multivendor marketplace with real-time inventory management, secure payment processing, and comprehensive admin dashboard. Built for scale with 10K+ daily users.",
-      tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-      image: null,
+      title: "Custom WooCommerce Store",
+      category: "WordPress Development",
+      description: "Full-featured e-commerce platform built with WooCommerce. Custom theme development, payment gateway integration, advanced product filtering, and optimized checkout flow.",
+      tags: ["WordPress", "WooCommerce", "PHP", "MySQL"],
+      image: "https://live.staticflickr.com/65535/52277497746_5a22357ee4_z.jpg",
       link: "#"
     },
     {
-      title: "SaaS Analytics Dashboard",
-      category: "Web Application",
-      description: "Real-time analytics dashboard for a B2B SaaS company. Features include custom data visualization, automated reporting, and team collaboration tools.",
-      tags: ["React", "TypeScript", "D3.js", "Firebase", "Tailwind"],
-      image: null,
+      title: "React Dashboard Interface",
+      category: "Frontend Development",
+      description: "Admin dashboard UI built with modern frontend practices. Focus on responsive layouts, interactive charts, and clean component structure.",
+      tags: ["HTML5", "CSS3", "JavaScript", "React"],
+      image: "https://live.staticflickr.com/65535/52277524968_03b1a6576a_z.jpg",
       link: "#"
     },
     {
-      title: "Brand Identity System",
-      category: "Graphic Design",
-      description: "Complete visual identity redesign for a tech startup. Included logo design, color system, typography guidelines, and comprehensive brand book.",
-      tags: ["Branding", "Logo Design", "Figma", "Illustrator"],
-      image: null,
+      title: "Corporate WordPress Website",
+      category: "WordPress Development",
+      description: "Professional business website with custom theme, Elementor Pro integration, multilingual support, and performance optimizations for SEO.",
+      tags: ["WordPress", "Elementor", "SEO", "Performance"],
+      image: "https://live.staticflickr.com/65535/52277522903_f8191d6a77_z.jpg",
       link: "#"
     },
     {
-      title: "Restaurant Ordering System",
-      category: "Web Development",
-      description: "Custom online ordering platform with real-time order tracking, kitchen display system, and integrated delivery management.",
-      tags: ["Laravel", "Vue.js", "MySQL", "Socket.io"],
-      image: null,
+      title: "Next.js Blog Platform (Example)",
+      category: "Static & Dynamic Sites",
+      description: "SEO-optimized blog platform with static generation, MDX support for rich content, and image optimization for fast page loads.",
+      tags: ["Next.js", "Static Generation", "MDX", "SEO"],
+      image: "https://live.staticflickr.com/65535/52264322231_87ed114f49_z.jpg",
       link: "#"
     },
     {
-      title: "SEO Campaign - Health Clinic",
-      category: "Digital Marketing",
-      description: "Comprehensive SEO strategy that increased organic traffic by 250% in 6 months. Included technical SEO, content strategy, and local SEO optimization.",
-      tags: ["SEO", "Content Marketing", "Google Analytics", "Ahrefs"],
-      image: null,
+      title: "WordPress Performance Overhaul",
+      category: "WordPress Optimization",
+      description: "Site speed improvements, caching, image optimization, and technical SEO that significantly reduced load times and improved search visibility.",
+      tags: ["Caching", "Image Optimization", "SEO", "Speed"],
+      image: "https://live.staticflickr.com/65535/52277502026_34ba251157_z.jpg",
       link: "#"
     },
     {
-      title: "Corporate Website Redesign",
-      category: "Web Development",
-      description: "Modern redesign for a financial services company. Focused on performance, accessibility, and conversion optimization.",
-      tags: ["WordPress", "PHP", "JavaScript", "GSAP"],
-      image: null,
+      title: "Headless WordPress + React",
+      category: "Decoupled Architecture",
+      description: "Headless setup using WordPress as CMS with a React frontend consuming REST API for a fast, flexible content experience.",
+      tags: ["Headless CMS", "REST API", "React", "WordPress"],
+      image: "https://live.staticflickr.com/65535/52277500396_afd195b2d2_z.jpg",
       link: "#"
     }
   ];
@@ -80,52 +80,52 @@ export default function Portfolio() {
 
       {/* Projects Grid */}
       <section className="py-12 px-4 sm:px-6 lg:px-8 border-t border-neutral-800/50">
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-8">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <a 
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block p-6 md:p-8 rounded-2xl bg-neutral-900/50 border border-neutral-800 card-hover"
-                >
-                  <div className="flex flex-col gap-4">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <span className="text-sm text-green-400 font-medium">{project.category}</span>
-                        <h3 className="text-xl md:text-2xl font-semibold text-white mt-1 group-hover:text-green-400 transition-colors flex items-center gap-2">
-                          {project.title}
-                          <ArrowUpRight size={20} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </h3>
-                      </div>
-                      <div className="p-2 rounded-lg bg-neutral-800 text-neutral-400 group-hover:bg-green-500 group-hover:text-neutral-900 transition-all">
-                        <ExternalLink size={18} />
-                      </div>
+              <div key={index} className="relative">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="group block rounded-2xl overflow-hidden shadow-lg">
+                  <div className="relative h-48 bg-neutral-800">
+                    {project.image ? (
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center text-neutral-500">No image</div>
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="absolute left-4 bottom-4">
+                      <span className="text-xs bg-green-500 text-black font-bold px-2 py-1 rounded">{project.category}</span>
                     </div>
-                    
-                    <p className="text-neutral-400 leading-relaxed">
-                      {project.description}
-                    </p>
-                    
-                    <div className="flex flex-wrap gap-2 pt-2">
+                  </div>
+
+                  <div className="p-4 bg-neutral-900 border border-neutral-800">
+                    <h3 className="text-lg font-semibold text-white mb-2 flex items-center justify-between">
+                      <span>{project.title}</span>
+                      <ExternalLink size={16} className="text-neutral-400 group-hover:text-green-400" />
+                    </h3>
+                    <p className="text-neutral-400 text-sm leading-relaxed mb-3">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {project.tags.map((tag, i) => (
-                        <span key={i} className="tech-badge text-xs">
-                          {tag}
-                        </span>
+                        <span key={i} className="text-xs bg-neutral-800 text-neutral-300 px-2 py-1 rounded-full">{tag}</span>
                       ))}
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs text-neutral-500">Case Study</span>
+                      <button className="inline-flex items-center gap-2 bg-green-500 text-black px-3 py-2 rounded-md text-sm font-semibold hover:bg-green-400 transition-all">
+                        View Project
+                        <ArrowUpRight size={14} />
+                      </button>
                     </div>
                   </div>
                 </a>
-              </motion.div>
+              </div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 

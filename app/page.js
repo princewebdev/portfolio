@@ -6,49 +6,49 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   const technologies = [
-    "React", "Next.js", "Node.js", "TypeScript", "Laravel", "PHP", 
-    "WordPress", "Tailwind CSS", "PostgreSQL", "MongoDB", "Figma", 
-    "SEO", "Google Ads", "Facebook Ads", "Photoshop", "Illustrator"
+    "WordPress", "WooCommerce", "PHP", "HTML5", "CSS3", "JavaScript", 
+    "jQuery", "Bootstrap", "Tailwind CSS", "SASS", "Responsive Design", 
+    "React", "Elementor Pro", "Gutenberg", "MySQL", "Git"
   ];
 
   const experiences = [
     {
+      company: "Progressive Bytes",
+      role: "WordPress Developer",
+      period: "Mar 2025 - Present",
+      description: "Building awesome websites on WordPress. Developing custom themes, responsive designs, and optimizing performance for clients."
+    },
+    {
       company: "Freelance",
-      role: "Full Stack Developer & Designer",
-      period: "2020 - Present",
-      description: "Building custom web solutions for clients worldwide. Specializing in React, Next.js, and WordPress development."
+      role: "WordPress & Frontend Developer",
+      period: "2022 - Present",
+      description: "Developing custom WordPress themes, WooCommerce stores, and responsive frontend interfaces for clients worldwide. Building pixel-perfect, mobile-friendly websites with modern HTML5, CSS3, and JavaScript."
     },
     {
-      company: "Digital Agency",
-      role: "Senior Web Developer",
-      period: "2018 - 2020",
-      description: "Led development of 50+ client projects including e-commerce platforms and SaaS applications."
-    },
-    {
-      company: "StartUp Hub",
-      role: "Frontend Developer",
-      period: "2016 - 2018",
-      description: "Developed responsive user interfaces and implemented modern frontend architectures."
+      company: "Shikhbe Shobai",
+      role: "Web Development Student",
+      period: "2022",
+      description: "Started web development journey learning WordPress, PHP, HTML, CSS, JavaScript, and modern web technologies through comprehensive training programs."
     }
   ];
 
   const projects = [
     {
       title: "E-Commerce Platform",
-      description: "A full-featured multivendor marketplace with real-time inventory, payment processing, and admin dashboard.",
+      description: "Multivendor marketplace with microservices architecture. Real-time inventory sync using Redis pub/sub, Stripe Connect for split payments, GraphQL API gateway, and React admin dashboard with SSR/ISR.",
       tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
       link: "/portfolio"
     },
     {
       title: "SaaS Dashboard",
-      description: "Analytics dashboard for a B2B SaaS company with real-time data visualization and reporting features.",
+      description: "Real-time analytics platform built with React/TypeScript. WebSocket data streaming, custom D3.js visualizations, Firebase real-time DB, RESTful API with JWT auth, and automated PDF report generation.",
       tags: ["React", "TypeScript", "D3.js", "Firebase"],
       link: "/portfolio"
     },
     {
-      title: "Brand Identity System",
-      description: "Complete visual identity redesign including logo, color system, typography, and marketing materials.",
-      tags: ["Branding", "UI Design", "Figma", "Illustrator"],
+      title: "Responsive Frontend Interface",
+      description: "Modern, mobile-first responsive website built with HTML5, CSS3, JavaScript, and Bootstrap. Features smooth animations, cross-browser compatibility, and optimized performance with 95+ PageSpeed score.",
+      tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       link: "/portfolio"
     }
   ];
@@ -57,25 +57,25 @@ export default function Home() {
     {
       icon: <Code2 size={24} />,
       title: "Web Development",
-      description: "Custom websites and web applications built with modern technologies.",
+      description: "Full-stack development with React/Next.js, Node.js APIs, database design, CI/CD pipelines, and cloud deployment (AWS/Vercel).",
       link: "/services/web-development"
     },
     {
       icon: <Palette size={24} />,
-      title: "Graphic Design",
-      description: "Brand identities, logos, and visual designs that make an impact.",
+      title: "UI Engineering",
+      description: "Component architecture, design systems, animations with Framer Motion/GSAP, responsive layouts, and pixel-perfect implementations.",
       link: "/services/graphic-design"
     },
     {
       icon: <TrendingUp size={24} />,
-      title: "SEO Optimization",
-      description: "Data-driven strategies to boost your search engine rankings.",
+      title: "Performance Engineering",
+      description: "Core Web Vitals optimization, code splitting, lazy loading, CDN configuration, database query optimization, and lighthouse scoring.",
       link: "/services/seo"
     },
     {
       icon: <Megaphone size={24} />,
-      title: "Digital Marketing",
-      description: "Performance marketing campaigns that drive real results.",
+      title: "Frontend Development",
+      description: "Modern, responsive frontend interfaces with HTML5, CSS3, JavaScript, jQuery, and React. Cross-browser compatible, mobile-first design, and pixel-perfect implementations.",
       link: "/services/marketing"
     }
   ];
@@ -106,8 +106,8 @@ export default function Home() {
 
             {/* Description */}
             <p className="text-lg sm:text-xl text-neutral-400 max-w-2xl mx-auto leading-relaxed">
-              A Full Stack Developer & Designer focused on creating beautiful, functional, 
-              and user-centered digital experiences. I help brands grow through code and creativity.
+              Professional WordPress and Frontend Developer from Bangladesh. Expert in custom WordPress themes, 
+              WooCommerce stores, and modern frontend development with HTML5, CSS3, JavaScript, and responsive design.
             </p>
 
             {/* CTA Buttons */}
@@ -163,19 +163,20 @@ export default function Home() {
             
             <div className="space-y-6 text-lg text-neutral-400 leading-relaxed">
               <p>
-                I am a passionate developer and designer with over 5 years of experience crafting 
-                digital solutions. I believe in the power of clean code, thoughtful design, and 
-                strategic thinking to solve real business problems.
+                I am a passionate WordPress and Frontend Developer with strong expertise in creating modern, 
+                responsive, and high-performance websites. With hands-on experience in custom WordPress theme 
+                development, WooCommerce e-commerce stores, and plugin customization, I turn ideas into fully 
+                functional digital solutions.
               </p>
               <p>
-                My expertise spans across the full development stack - from building responsive 
-                frontends with React and Next.js to architecting robust backend systems. I also 
-                bring a strong design sensibility to every project, ensuring that the end result 
-                is not just functional, but beautiful.
+                My frontend development skills include HTML5, CSS3, JavaScript (ES6+), jQuery, responsive design, 
+                and modern UI frameworks. I work with React for dynamic interfaces and have experience with 
+                Elementor Pro, Gutenberg, and page builders for efficient WordPress development.
               </p>
               <p>
-                When I am not coding, you will find me exploring new technologies, contributing to 
-                open source, or writing about web development best practices.
+                I focus on clean code, cross-browser compatibility, performance optimization, SEO best practices, 
+                and pixel-perfect responsive design. Every project is crafted with attention to detail, accessibility 
+                standards, and long-term maintainability.
               </p>
             </div>
 
